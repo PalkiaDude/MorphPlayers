@@ -1,5 +1,5 @@
 <?php
-namespace MorphPlayers;
+namespace PalkiaDude\MorphPlayers;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use pocketmine\event\Listener;
