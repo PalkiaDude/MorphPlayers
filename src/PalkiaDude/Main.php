@@ -38,7 +38,9 @@ public function onCommand(CommandSender $sender, Command $cmd, $label, array $ar
       }
       public function onMove(PlayerMoveEvent $newb){
         $p= $newb getPlayer();
-        if(isset($this->creeper))
+        if(isset($this->creeper) && $p === $this->player){
+          $this->creeper->teleport(new Position($p->getX(),$p->getY(),$p->getZ(),$p->getLevel()));
+        }
       }
     }
   }
