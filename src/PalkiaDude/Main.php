@@ -13,7 +13,7 @@ class Main extends PluginBase implements Listener{
   
   public function onEnable(){
   $this->getServer()->getPluginManager()->registerevents($this, $this);
-  $this->getLogger()->info(TextFormat::GREEN . "Morphing Powers Activated!")
+  $this->getLogger()->info(TextFormat::GREEN . "Morphing Powers Activated!");
   }
   function spawn($p){
     hidePlayer($p);
