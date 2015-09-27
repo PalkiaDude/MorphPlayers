@@ -8,7 +8,7 @@ use pocketmine\entity\Creeper;
 use pocketmine\Player;
 use pocketmine\level\Position;
 use pocketmine\Server;
-use pocketmine\plugin\Plugin
+use pocketmine\plugin\Plugin;
 class Main extends PluginBase implements Listener{
   
   public function onEnable(){
@@ -30,6 +30,15 @@ public function onCommand(CommandSender $sender, Command $cmd, $label, array $ar
         $this->addPlayer(sender);
         $sender->sendMessage(TextFormat::GREEN . "You have morphed into the explosive Creeper!")
       }
+    }
+    else{
+      $sender->sendMessage(TextFormat::RED . "Use it in-game. Not here.")
+    }
+      }
+      }
+      public function onMove(PlayerMoveEvent $newb){
+        $p= $newb getPlayer();
+        if(isset($this->creeper))
       }
     }
   }
