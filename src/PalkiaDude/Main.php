@@ -1,5 +1,5 @@
 <?php
-namespace PalkiaDude\MorphPlayers;
+namespace PalkiaDude/MorphPlayers;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use pocketmine\event\Listener;
@@ -12,7 +12,7 @@ use pocketmine\plugin\Plugin;
 class Main extends PluginBase implements Listener{
   
   public function onEnable(){
-  $this->getServer()->getPluginManager()->registerevents($this, $this)
+  $this->getServer()->getPluginManager()->registerevents($this, $this);
   $this->getLogger()->info(TextFormat::GREEN . "Morphing Powers Activated!")
   }
   function spawn($p){
