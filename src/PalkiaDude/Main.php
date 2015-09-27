@@ -19,7 +19,7 @@ class Main extends PluginBase implements Listener{
     hidePlayer($p);
   }
   }
-public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
+  public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
   if(strtolower($cmd -> getName()) === "morphcreeper"){
     if($sender instanceof Player){
       if($this->isPlayer($sender)){
