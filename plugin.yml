@@ -3,7 +3,7 @@ author: PalkiaDude
 version: "1.0.0"
 api: [1.13.0]
 description: Morph into mobs.
-main: MorphPlayers\Main
+main: PalkiaDude\Main
 
 commands:
     morphcreeper:
