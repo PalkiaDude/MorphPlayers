@@ -21,16 +21,16 @@ class Main extends PluginBase implements Listener{
 }
 
     public function onCommand(CommandSender $sender, Command $cmd, $label,array $args){
-        if(strtolower($cmd->getName()) === "footblock"){
+        if(strtolower($cmd->getName()) === "morphcreeper"){
             if($sender instanceof Player){
                 if($this->isPlayer($sender)){
                     $this->removePlayer($sender);
-                    $sender->sendMessage(TextFormat::GOLD . "You have disabled FootBlock.");
+                    $sender->sendMessage(TextFormat::GOLD . "You have morphed back.");
                     return true;
                 }
                 else{
                     $this->addPlayer($sender);
-                    $sender->sendMessage(TextFormat::GREEN . "You have enabled FootBlock.");
+                    $sender->sendMessage(TextFormat::GREEN . "You have morphed into the creeper.");
                     return true;
                 }
             }
