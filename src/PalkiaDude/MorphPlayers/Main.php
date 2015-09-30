@@ -9,6 +9,8 @@ use pocketmine\Player;
 use pocketmine\level\Position;
 use pocketmine\Server;
 use pocketmine\plugin\Plugin;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 class Main extends PluginBase implements Listener{
   
   public function onEnable(){
