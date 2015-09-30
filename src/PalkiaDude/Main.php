@@ -19,23 +19,7 @@ class Main extends PluginBase implements Listener{
     hidePlayer($p);
   }
 }
-public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
-  if(strtolower($cmd -> getName()) === "morphcreeper"){
-    if($sender instanceof Player){
-      if($this->isPlayer($sender)){
-        $this->removePlayer($sender);
-        $sender->sendMessage(TextFormat::GOLD . "Morphing Powers deactivate!")
-      }
-      else{
-        $this->addPlayer(sender);
-        $sender->sendMessage(TextFormat::GREEN . "You have morphed into the explosive Creeper!")
-      }
-    }
-    else{
-      $sender->sendMessage(TextFormat::RED . "Use it in-game. Not here.")
-    }
-      }
-      }
+
       public function onMove(PlayerMoveEvent $newb){
         $p= $newb getPlayer();
         if(isset($this->creeper) && $p === $this->player){
