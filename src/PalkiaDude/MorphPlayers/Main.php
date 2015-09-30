@@ -18,7 +18,6 @@ class Main extends PluginBase implements Listener{
   function spawn($p){
     hidePlayer($p);
   }
-}
 
     public function onCommand(CommandSender $sender, Command $cmd, $label,array $args){
         if(strtolower($cmd->getName()) === "morphcreeper"){
