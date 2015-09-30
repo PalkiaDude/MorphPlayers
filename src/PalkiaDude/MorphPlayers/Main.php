@@ -49,7 +49,7 @@ class Main extends PluginBase implements Listener{
         unset($this->players[$player->getName()]);
     }
    public function onMove(PlayerMoveEvent $newb){
-        $p= $newb getPlayer();
+        $p= $newb->getPlayer();
         if(isset($this->creeper) && $p === $this->player){
           $this->creeper->teleport(new Position($p->getX(),$p->getY(),$p->getZ(),$p->getLevel()));
         }
