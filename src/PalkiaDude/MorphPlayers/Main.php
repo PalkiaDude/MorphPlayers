@@ -31,7 +31,7 @@ class Main extends PluginBase implements Listener{
                 }
                 else{
                     $this->addPlayer($sender);
-                    $sender->sendMessage(TextFormat::GREEN . "You have morphed into the creeper.");
+                    $sender->sendMessage(TextFormat::GREEN . "You have morphed into the Zombie.");
                     return true;
                 }
             }
@@ -52,8 +52,8 @@ class Main extends PluginBase implements Listener{
     }
    public function onMove(PlayerMoveEvent $newb){
         $p= $newb->getPlayer();
-        if(isset($this->creeper) && $p === $this->player){
-          $this->creeper->teleport(new Position($p->getX(),$p->getY(),$p->getZ(),$p->getLevel()));
+        if(isset($this->zombie) && $p === $this->player){
+          $this->zombie->teleport(new Position($p->getX(),$p->getY(),$p->getZ(),$p->getLevel()));
         }
       }
     }
