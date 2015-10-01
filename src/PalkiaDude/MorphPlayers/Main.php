@@ -4,7 +4,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerMoveEvent;
-use pocketmine\entity\Creeper;
+use pocketmine\entity\Zombie;
 use pocketmine\Player;
 use pocketmine\level\Position;
 use pocketmine\Server;
